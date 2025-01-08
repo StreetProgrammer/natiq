@@ -1,25 +1,15 @@
 import './App.css';
-
-import {NavLink , Outlet} from "react-router-dom";
+import { Outlet} from "react-router-dom";
+import Layout from "./components/Layout";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
   return (    
     <div>
-        <ul>
-          <li>
-            <NavLink to="/" end>Home </NavLink>
-          </li>
-          <li>
-            <NavLink to="about" end>About </NavLink>
-          </li>
-          <li>
-            <NavLink to="natiq" end>Natiq </NavLink>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Outlet />
+      <CssBaseline />
+        <Layout>
+          <Outlet />
+        </Layout>
     </div>
     
   );
