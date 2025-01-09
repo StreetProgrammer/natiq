@@ -45,6 +45,7 @@ function AudioPlayer({ src }) {
 
   return (
     <Box
+      data-testid="player"
       sx={{
         background: "#1976d20a",
         marginBlock: "10px",
