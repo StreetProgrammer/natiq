@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import { useStyles } from "./styles";
-import { NavLink } from "react-router-dom";
+import { useStyles } from "../styles";
+import { NavLink } from "react-router";
 
 const Home = () => {
   const classes = useStyles();
@@ -27,6 +27,7 @@ const Home = () => {
           to="/natiq"
           variant="contained"
           color="primary"
+          data-testid="tryNatiqLink"
         >
           Try Natiq
         </Button>

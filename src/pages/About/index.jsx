@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, Grid2 } from "@mui/material";
-import { useStyles } from "./styles";
-import { NavLink } from "react-router-dom";
+import { useStyles } from "../styles";
 
 const About = () => {
   const classes = useStyles();
@@ -41,11 +40,17 @@ const About = () => {
           </Typography>
         </Grid2>
         <Grid2 size={{ xs: 12, md: 5 }}>
-          <img src="https://cdn-gceod.nitrocdn.com/kaLRsxNjbgXNaKuhdzkUDQAgUbeNnCIm/assets/images/optimized/rev-ac456f3/rdi-eg.ai/wp-content/uploads/2020/11/About-RDI.png" />
+          <img
+            alt="Our mission"
+            src="https://cdn-gceod.nitrocdn.com/kaLRsxNjbgXNaKuhdzkUDQAgUbeNnCIm/assets/images/optimized/rev-ac456f3/rdi-eg.ai/wp-content/uploads/2020/11/About-RDI.png"
+          />
         </Grid2>
 
         <Grid2 size={{ xs: 12, md: 5 }}>
-          <img src="https://cdn-gceod.nitrocdn.com/kaLRsxNjbgXNaKuhdzkUDQAgUbeNnCIm/assets/images/optimized/rev-ac456f3/rdi-eg.ai/wp-content/uploads/2020/10/we-serve-arabic2.png" />
+          <img
+            alt="History"
+            src="https://cdn-gceod.nitrocdn.com/kaLRsxNjbgXNaKuhdzkUDQAgUbeNnCIm/assets/images/optimized/rev-ac456f3/rdi-eg.ai/wp-content/uploads/2020/10/we-serve-arabic2.png"
+          />
         </Grid2>
         <Grid2 className={classes.content} size={{ xs: 12, md: 7 }}>
           <Typography variant="h4">History</Typography>

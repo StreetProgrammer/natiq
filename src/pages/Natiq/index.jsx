@@ -12,8 +12,8 @@ import {
   Alert,
   CircularProgress,
 } from "@mui/material";
-import { useStyles } from "./styles";
-import AudioPlayer from "../components/AudioPlayer";
+import { useStyles } from "../styles";
+import AudioPlayer from "../../components/AudioPlayer";
 
 const Natiq = () => {
   const classes = useStyles();
@@ -90,11 +90,11 @@ const Natiq = () => {
             </Typography>
 
             <TextField
-              id="outlined-basic"
               label="Enter text here"
               variant="outlined"
               value={txt}
               onChange={(e) => handleOnChange(e)}
+              placeholder="Enter Text Here"
             />
 
             {!!currentAudio && <AudioPlayer src={currentAudio} />}
@@ -110,13 +110,18 @@ const Natiq = () => {
           </Box>
         </CardContent>
         <CardActions>
-          <Button disabled={txt.length === 0} onClick={callNatiq}>
+          <Button
+            data-testid="natiqServiceBtn"
+            disabled={txt.length === 0}
+            onClick={callNatiq}
+          >
             Echo
           </Button>
         </CardActions>
       </Card>
       {loading && (
         <Box
+          data-testid="loadingWrapper"
           sx={{
             position: "absolute",
             top: 0,

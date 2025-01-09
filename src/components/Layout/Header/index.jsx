@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router";
 
 import {
   Box,

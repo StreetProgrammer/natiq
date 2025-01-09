@@ -1,5 +1,5 @@
 import './App.css';
-import { Outlet} from "react-router-dom";
+import { Outlet} from "react-router";
 import Layout from "./components/Layout";
 import CssBaseline from "@mui/material/CssBaseline";
 
